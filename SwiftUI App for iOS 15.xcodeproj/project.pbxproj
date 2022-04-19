@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1766C0B6280EF095009CE78E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766C0B5280EF095009CE78E /* AccountView.swift */; };
 		17925B5B28076075006858BB /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17925B5A28076075006858BB /* Styles.swift */; };
 		17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CF66BF28060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift */; };
 		17CF66C228060E8800A322D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CF66C128060E8800A322D3 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1766C0B5280EF095009CE78E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		17925B5A28076075006858BB /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		17CF66BC28060E8800A322D3 /* SwiftUI App for iOS 15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI App for iOS 15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CF66BF28060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_App_for_iOS_15App.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				17CF66BF28060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift */,
 				17CF66C128060E8800A322D3 /* ContentView.swift */,
 				17925B5A28076075006858BB /* Styles.swift */,
+				1766C0B5280EF095009CE78E /* AccountView.swift */,
 				17CF66C328060E8A00A322D3 /* Assets.xcassets */,
 				17CF66C528060E8A00A322D3 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1766C0B6280EF095009CE78E /* AccountView.swift in Sources */,
 				17925B5B28076075006858BB /* Styles.swift in Sources */,
 				17CF66C228060E8800A322D3 /* ContentView.swift in Sources */,
 				17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */,
