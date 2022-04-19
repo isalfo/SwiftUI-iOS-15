@@ -14,6 +14,7 @@
 		17CF66C428060E8A00A322D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CF66C328060E8A00A322D3 /* Assets.xcassets */; };
 		17CF66C728060E8A00A322D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CF66C628060E8A00A322D3 /* Preview Assets.xcassets */; };
 		17EE4CF1280F546000BEC449 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE4CF0280F546000BEC449 /* BlobView.swift */; };
+		17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE4CF2280F5FA500BEC449 /* HexagonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		17CF66C328060E8A00A322D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17CF66C628060E8A00A322D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17EE4CF0280F546000BEC449 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		17EE4CF2280F5FA500BEC449 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				17CF66C128060E8800A322D3 /* ContentView.swift */,
 				17925B5A28076075006858BB /* Styles.swift */,
 				1766C0B5280EF095009CE78E /* AccountView.swift */,
+				17EE4CF2280F5FA500BEC449 /* HexagonView.swift */,
 				17EE4CF0280F546000BEC449 /* BlobView.swift */,
 				17CF66C328060E8A00A322D3 /* Assets.xcassets */,
 				17CF66C528060E8A00A322D3 /* Preview Content */,
@@ -151,6 +154,7 @@
 				17925B5B28076075006858BB /* Styles.swift in Sources */,
 				17CF66C228060E8800A322D3 /* ContentView.swift in Sources */,
 				17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */,
+				17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
