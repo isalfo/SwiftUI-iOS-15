@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  SwiftUI App for iOS 15
 //
-//  Created by Gonzalo Alfonso on 12/04/2022.
+//  Created by Gonzalo Alfonso on 21/04/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
       VStack (alignment: .leading, spacing: 8.0) {
         Spacer()
@@ -52,16 +52,11 @@ struct ContentView: View {
           .frame(height: 230)
           .offset(x: 32, y: -80)
       )
-      
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-      Group {
-        ContentView()
-        ContentView()
-          .preferredColorScheme(.dark)
-      }
+        HomeView()
     }
 }
