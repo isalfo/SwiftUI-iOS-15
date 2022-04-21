@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
   @State var hasScrolled: Bool = false
+  
     var body: some View {
       ScrollView {
         GeometryReader { proxy in
@@ -33,8 +34,7 @@ struct HomeView: View {
         Color.clear.frame(height: 70)
       })
       .overlay(
-        NavigationBar(title: "Featured")
-          .opacity(hasScrolled ? 1 : 0)
+        NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
       )
     }
 }
