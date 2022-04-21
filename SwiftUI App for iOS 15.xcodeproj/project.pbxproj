@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1726013428103F9100C5694B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726013328103F9100C5694B /* TabBar.swift */; };
 		17260136281044B500C5694B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260135281044B500C5694B /* Tab.swift */; };
+		172751C72811F77B00BAB1F1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172751C62811F77B00BAB1F1 /* Course.swift */; };
 		1766C0B6280EF095009CE78E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766C0B5280EF095009CE78E /* AccountView.swift */; };
 		176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BE8A52811BC3B0096238F /* PreferenceKeys.swift */; };
 		176BE8A82811C3610096238F /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BE8A72811C3610096238F /* AnimatableFontModifier.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		1726013328103F9100C5694B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		17260135281044B500C5694B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		172751C62811F77B00BAB1F1 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		1766C0B5280EF095009CE78E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		176BE8A52811BC3B0096238F /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		176BE8A72811C3610096238F /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				17260135281044B500C5694B /* Tab.swift */,
 				176BE8A52811BC3B0096238F /* PreferenceKeys.swift */,
+				172751C62811F77B00BAB1F1 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				1793699028119B150078A44C /* NavigationBar.swift in Sources */,
 				17CF66C228060E8800A322D3 /* ContentView.swift in Sources */,
 				17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */,
+				172751C72811F77B00BAB1F1 /* Course.swift in Sources */,
 				17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */,
 				1793698E2811998D0078A44C /* FeaturedItem.swift in Sources */,
 				176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */,
