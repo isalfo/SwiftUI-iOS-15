@@ -20,6 +20,7 @@
 		179AFF592813095B004085FB /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AFF582813095B004085FB /* MatchedView.swift */; };
 		179AFF5B28132D43004085FB /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AFF5A28132D43004085FB /* CourseItem.swift */; };
 		179AFF5D28133197004085FB /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AFF5C28133197004085FB /* CourseView.swift */; };
+		17C709852816D7AB00E92D5A /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C709842816D7AB00E92D5A /* Animations.swift */; };
 		17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CF66BF28060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift */; };
 		17CF66C228060E8800A322D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CF66C128060E8800A322D3 /* ContentView.swift */; };
 		17CF66C428060E8A00A322D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CF66C328060E8A00A322D3 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		179AFF582813095B004085FB /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		179AFF5A28132D43004085FB /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		179AFF5C28133197004085FB /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		17C709842816D7AB00E92D5A /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		17CF66BC28060E8800A322D3 /* SwiftUI App for iOS 15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI App for iOS 15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17CF66BF28060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_App_for_iOS_15App.swift; sourceTree = "<group>"; };
 		17CF66C128060E8800A322D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				17925B5A28076075006858BB /* Styles.swift */,
 				176BE8A72811C3610096238F /* AnimatableFontModifier.swift */,
+				17C709842816D7AB00E92D5A /* Animations.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */,
 				179AFF5B28132D43004085FB /* CourseItem.swift in Sources */,
 				1793698E2811998D0078A44C /* FeaturedItem.swift in Sources */,
+				17C709852816D7AB00E92D5A /* Animations.swift in Sources */,
 				176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */,
 				1726013428103F9100C5694B /* TabBar.swift in Sources */,
 				176BE8A82811C3610096238F /* AnimatableFontModifier.swift in Sources */,
