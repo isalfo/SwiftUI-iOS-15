@@ -30,13 +30,15 @@ struct HomeView: View {
             .padding(.horizontal, 20)
           
           if !show {
-            CourseItem(namespace: namespace, show: $show)
-              .onTapGesture {
-                withAnimation(.openCard) {
-                  show.toggle()
-                  showStatusBar = false
-                }
+            ForEach(courses) { course in
+              CourseItem(namespace: namespace, course: course, show: $show)
+                .onTapGesture {
+                  withAnimation(.openCard) {
+                    show.toggle()
+                    showStatusBar = false
+                  }
               }
+            }
           }
           
         }
@@ -48,11 +50,13 @@ struct HomeView: View {
           NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
       )
         if show {
-          CourseView(namespace: namespace, show: $show)
-            .zIndex(1)
-            .transition(.asymmetric(
-              insertion: .opacity.animation(.easeInOut(duration: 0.1)),
+          ForEach(courses) { course in
+            CourseView(namespace: namespace, course: course, show: $show)
+              .zIndex(1)
+              .transition(.asymmetric(
+                insertion: .opacity.animation(.easeInOut(duration: 0.1)),
               removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+          }
         }
         
       }
@@ -88,7 +92,7 @@ struct HomeView: View {
   
   var featured: some View {
     TabView {
-      ForEach(courses) { course in
+      ForEach(featuredCourses) { course in
         GeometryReader { proxy in
           let minX = proxy.frame(in: .global).minX
           FeaturedItem(course: course)
