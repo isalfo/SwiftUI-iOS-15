@@ -10,6 +10,7 @@
 		1726013428103F9100C5694B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726013328103F9100C5694B /* TabBar.swift */; };
 		17260136281044B500C5694B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260135281044B500C5694B /* Tab.swift */; };
 		172751C72811F77B00BAB1F1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172751C62811F77B00BAB1F1 /* Course.swift */; };
+		173C3ECB28199931003E0583 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3ECA28199931003E0583 /* SignUpView.swift */; };
 		1766C0B6280EF095009CE78E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766C0B5280EF095009CE78E /* AccountView.swift */; };
 		176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BE8A52811BC3B0096238F /* PreferenceKeys.swift */; };
 		176BE8A82811C3610096238F /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BE8A72811C3610096238F /* AnimatableFontModifier.swift */; };
@@ -36,6 +37,7 @@
 		1726013328103F9100C5694B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		17260135281044B500C5694B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		172751C62811F77B00BAB1F1 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		173C3ECA28199931003E0583 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1766C0B5280EF095009CE78E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		176BE8A52811BC3B0096238F /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		176BE8A72811C3610096238F /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				179AFF582813095B004085FB /* MatchedView.swift */,
 				179AFF5C28133197004085FB /* CourseView.swift */,
 				1788C2B828197C5D00C0D1F7 /* SearchView.swift */,
+				173C3ECA28199931003E0583 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */,
 				179AFF5B28132D43004085FB /* CourseItem.swift in Sources */,
 				1793698E2811998D0078A44C /* FeaturedItem.swift in Sources */,
+				173C3ECB28199931003E0583 /* SignUpView.swift in Sources */,
 				17C709852816D7AB00E92D5A /* Animations.swift in Sources */,
 				176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */,
 				17B018B628182C8F004DA56A /* Model.swift in Sources */,
