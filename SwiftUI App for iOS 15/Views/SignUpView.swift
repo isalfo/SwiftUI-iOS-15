@@ -21,6 +21,25 @@ struct SignUpView: View {
         .buttonStyle(.angular)
         .tint(.accentColor)
         .controlSize(.large)
+        
+        Group {
+          Text("By clicking on ")
+          + Text("_Create an account_").foregroundColor(.primary.opacity(0.7))
+          + Text(", you agree to our **Terms of Service** and **[Privacy Policy](https://designcode.io)**")
+          
+          Divider()
+          
+          HStack {
+            Text("Already have an account?")
+            Button{} label: {
+              Text("**Sign in**")
+            }
+          }
+        }
+        .font(.footnote)
+        .foregroundColor(.secondary)
+        .accentColor(.secondary)
+        
       }
       .padding(20)
       .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
