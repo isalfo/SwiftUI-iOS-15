@@ -100,8 +100,8 @@
 				179AFF582813095B004085FB /* MatchedView.swift */,
 				179AFF5C28133197004085FB /* CourseView.swift */,
 				1788C2B828197C5D00C0D1F7 /* SearchView.swift */,
-				17FBA275281AD28C0002467C /* Modals */,
 				17FBA276281ADD510002467C /* AvatarView.swift */,
+				17FBA275281AD28C0002467C /* Modals */,
 			);
 			path = Views;
 			sourceTree = "<group>";

@@ -11,7 +11,8 @@ struct AccountView: View {
   
   @State var isDeleted: Bool = false
   @State var isPinned: Bool = false
-  @Environment(\.presentationMode) var presentationMode
+  @Environment(\.dismiss) var dismiss
+  @AppStorage("isLogged") var isLogged: Bool = false
   
     var body: some View {
       NavigationView {
@@ -23,10 +24,18 @@ struct AccountView: View {
           
           links
           
+          Button {
+            isLogged = false
+            dismiss()
+          } label: {
+            Text("Sign out")
+          }
+          .tint(.red)
+          
         }
         .listStyle(.insetGrouped)
         .navigationTitle("Account")
-        .navigationBarItems(trailing: Button { presentationMode.wrappedValue.dismiss() } label: { Text("Done").bold() })
+        .navigationBarItems(trailing: Button { dismiss() } label: { Text("Done").bold() })
       }
     }
   

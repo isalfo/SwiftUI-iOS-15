@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ModalView: View {
   @EnvironmentObject var model: Model
-  @AppStorage("showModal") var showModal = true
+  @AppStorage("showModal") var showModal: Bool = true
+  @AppStorage("isLogged") var isLogged: Bool = false
   @State var viewState: CGSize = .zero
   @State var isDismissed: Bool = false
   @State var appear: [Bool] = [false, false, false]
@@ -70,6 +71,11 @@ struct ModalView: View {
         }
         withAnimation(.easeOut(duration: 1).delay(0.2)) {
           appear[2] = true
+        }
+      }
+      .onChange(of: isLogged) { value in
+        if value {
+          dismissModal()
         }
       }
     }
