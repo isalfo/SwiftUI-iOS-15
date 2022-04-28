@@ -24,6 +24,9 @@
 		17936986281190B40078A44C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17936985281190B40078A44C /* HomeView.swift */; };
 		1793698E2811998D0078A44C /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1793698D2811998D0078A44C /* FeaturedItem.swift */; };
 		1793699028119B150078A44C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1793698F28119B150078A44C /* NavigationBar.swift */; };
+		17957A4A281B4D6800A024D6 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17957A49281B4D6800A024D6 /* CourseSection.swift */; };
+		17957A4C281B4F0500A024D6 /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17957A4B281B4F0500A024D6 /* SectionRow.swift */; };
+		17957A4E281B52F400A024D6 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17957A4D281B52F400A024D6 /* SectionView.swift */; };
 		179AFF592813095B004085FB /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AFF582813095B004085FB /* MatchedView.swift */; };
 		179AFF5B28132D43004085FB /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AFF5A28132D43004085FB /* CourseItem.swift */; };
 		179AFF5D28133197004085FB /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AFF5C28133197004085FB /* CourseView.swift */; };
@@ -38,6 +41,7 @@
 		17FBA277281ADD510002467C /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBA276281ADD510002467C /* AvatarView.swift */; };
 		17FBA279281AE8240002467C /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBA278281AE8240002467C /* Adress.swift */; };
 		17FBA27B281AEA290002467C /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBA27A281AEA290002467C /* Coin.swift */; };
+		17FBA27D281B10800002467C /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBA27C281B10800002467C /* CircularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,9 @@
 		17936985281190B40078A44C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1793698D2811998D0078A44C /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		1793698F28119B150078A44C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		17957A49281B4D6800A024D6 /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		17957A4B281B4F0500A024D6 /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		17957A4D281B52F400A024D6 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		179AFF582813095B004085FB /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		179AFF5A28132D43004085FB /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		179AFF5C28133197004085FB /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 		17FBA276281ADD510002467C /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		17FBA278281AE8240002467C /* Adress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
 		17FBA27A281AEA290002467C /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		17FBA27C281B10800002467C /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 				179AFF5C28133197004085FB /* CourseView.swift */,
 				1788C2B828197C5D00C0D1F7 /* SearchView.swift */,
 				17FBA276281ADD510002467C /* AvatarView.swift */,
+				17957A4D281B52F400A024D6 /* SectionView.swift */,
 				17FBA275281AD28C0002467C /* Modals */,
 			);
 			path = Views;
@@ -117,6 +126,8 @@
 				17EE4CF0280F546000BEC449 /* BlobView.swift */,
 				1793698D2811998D0078A44C /* FeaturedItem.swift */,
 				179AFF5A28132D43004085FB /* CourseItem.swift */,
+				17FBA27C281B10800002467C /* CircularView.swift */,
+				17957A4B281B4F0500A024D6 /* SectionRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 				1788C2BA2819837900C0D1F7 /* Suggestion.swift */,
 				17FBA278281AE8240002467C /* Adress.swift */,
 				17FBA27A281AEA290002467C /* Coin.swift */,
+				17957A49281B4D6800A024D6 /* CourseSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,6 +280,7 @@
 			files = (
 				1788C2B928197C5D00C0D1F7 /* SearchView.swift in Sources */,
 				17936986281190B40078A44C /* HomeView.swift in Sources */,
+				17957A4E281B52F400A024D6 /* SectionView.swift in Sources */,
 				17EE4CF1280F546000BEC449 /* BlobView.swift in Sources */,
 				179AFF5D28133197004085FB /* CourseView.swift in Sources */,
 				1766C0B6280EF095009CE78E /* AccountView.swift in Sources */,
@@ -281,6 +294,8 @@
 				17CF66C228060E8800A322D3 /* ContentView.swift in Sources */,
 				173C3ED32819D514003E0583 /* SignInView.swift in Sources */,
 				17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */,
+				17FBA27D281B10800002467C /* CircularView.swift in Sources */,
+				17957A4A281B4D6800A024D6 /* CourseSection.swift in Sources */,
 				17FBA27B281AEA290002467C /* Coin.swift in Sources */,
 				172751C72811F77B00BAB1F1 /* Course.swift in Sources */,
 				17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */,
@@ -288,6 +303,7 @@
 				179AFF5B28132D43004085FB /* CourseItem.swift in Sources */,
 				1793698E2811998D0078A44C /* FeaturedItem.swift in Sources */,
 				173C3ECB28199931003E0583 /* SignUpView.swift in Sources */,
+				17957A4C281B4F0500A024D6 /* SectionRow.swift in Sources */,
 				17C709852816D7AB00E92D5A /* Animations.swift in Sources */,
 				176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */,
 				173C3ECF2819C98E003E0583 /* InputStyle.swift in Sources */,
