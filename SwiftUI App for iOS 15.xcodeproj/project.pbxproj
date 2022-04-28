@@ -35,6 +35,7 @@
 		17CF66C728060E8A00A322D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17CF66C628060E8A00A322D3 /* Preview Assets.xcassets */; };
 		17EE4CF1280F546000BEC449 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE4CF0280F546000BEC449 /* BlobView.swift */; };
 		17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE4CF2280F5FA500BEC449 /* HexagonView.swift */; };
+		17FBA277281ADD510002467C /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FBA276281ADD510002467C /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		17CF66C628060E8A00A322D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17EE4CF0280F546000BEC449 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		17EE4CF2280F5FA500BEC449 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		17FBA276281ADD510002467C /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				179AFF5C28133197004085FB /* CourseView.swift */,
 				1788C2B828197C5D00C0D1F7 /* SearchView.swift */,
 				17FBA275281AD28C0002467C /* Modals */,
+				17FBA276281ADD510002467C /* AvatarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				1766C0B6280EF095009CE78E /* AccountView.swift in Sources */,
 				1788C2BB2819837900C0D1F7 /* Suggestion.swift in Sources */,
 				17925B5B28076075006858BB /* Styles.swift in Sources */,
+				17FBA277281ADD510002467C /* AvatarView.swift in Sources */,
 				179AFF592813095B004085FB /* MatchedView.swift in Sources */,
 				17260136281044B500C5694B /* Tab.swift in Sources */,
 				1793699028119B150078A44C /* NavigationBar.swift in Sources */,
