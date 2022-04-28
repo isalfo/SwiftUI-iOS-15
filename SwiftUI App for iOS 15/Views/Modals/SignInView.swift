@@ -1,5 +1,5 @@
 //
-//  SignUpView.swift
+//  SignInView.swift
 //  SwiftUI App for iOS 15
 //
 //  Created by Gonzalo Alfonso on 27/04/2022.
@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct SignUpView: View {
-  
+struct SignInView: View {
   enum Field: Hashable {
     case email
     case password
@@ -25,7 +24,7 @@ struct SignUpView: View {
   
     var body: some View {
       VStack(alignment: .leading, spacing: 16) {
-        Text("Sign Up")
+        Text("Sign In")
           .font(.largeTitle).bold()
         Text("Access 120+ hours of courses, tutorials and livestreams")
           .font(.headline)
@@ -51,27 +50,27 @@ struct SignUpView: View {
           .onPreferenceChange(CirclePreferenceKey.self) { value in
             passwordY = value
           }
-        Button {  } label: {
-          Text("Create an account")
+        Button { } label: {
+          Text("Sign in")
             .frame(maxWidth: .infinity)
         }
+        .font(.headline)
+        .blendMode(.overlay)
         .buttonStyle(.angular)
         .tint(.accentColor)
         .controlSize(.large)
+        .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
         
         Group {
-          Text("By clicking on ")
-          + Text("_Create an account_").foregroundColor(.primary.opacity(0.7))
-          + Text(", you agree to our **Terms of Service** and **[Privacy Policy](https://designcode.io)**")
           
           Divider()
           
           HStack {
-            Text("Already have an account?")
+            Text("No account yet?")
             Button{
-              model.selectedModal = .signIn
+              model.selectedModal = .signUp
             } label: {
-              Text("**Sign in**")
+              Text("**Sign up**")
             }
           }
         }
@@ -90,11 +89,6 @@ struct SignUpView: View {
       )
       .coordinateSpace(name: "container")
       .strokeStyle(cornerRadius: 30)
-      .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
-      .padding(20)
-      .background(
-        Image("Blob 1").offset(x: 200, y: -100)
-      )
       .onChange(of: focusedField) { value in
         withAnimation {
           if value == .email {
@@ -116,10 +110,10 @@ struct SignUpView: View {
   }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
       ZStack {
-        SignUpView()
+        SignInView()
           .environmentObject(Model())
       }
     }
