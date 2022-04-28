@@ -11,33 +11,55 @@ struct AccountView: View {
   
   @State var isDeleted: Bool = false
   @State var isPinned: Bool = false
+  @State var adress: Adress = Adress(id: 1, country: "Argentina")
   @Environment(\.dismiss) var dismiss
   @AppStorage("isLogged") var isLogged: Bool = false
+  @ObservedObject var coinModel = CoinModel()
   
-    var body: some View {
-      NavigationView {
-        List {
-          
-          profile
-            
-          menu
-          
-          links
-          
-          Button {
-            isLogged = false
-            dismiss()
-          } label: {
-            Text("Sign out")
-          }
-          .tint(.red)
-          
-        }
-        .listStyle(.insetGrouped)
-        .navigationTitle("Account")
-        .navigationBarItems(trailing: Button { dismiss() } label: { Text("Done").bold() })
-      }
+  func fetchAdress() async {
+    do {
+      let url = URL(string: "https://random-data-api.com/api/address/random_address")!
+      let (data, _) = try await URLSession.shared.data(from: url)
+      adress = try JSONDecoder().decode(Adress.self, from: data)
+    } catch {
+      adress = Adress(id: 1, country: "Error fetching data")
     }
+    
+  }
+  
+  var body: some View {
+    NavigationView {
+      List {
+        
+        profile
+        
+        menu
+        
+        links
+        
+        coins
+        
+        Button {
+          isLogged = false
+          dismiss()
+        } label: {
+          Text("Sign out")
+        }
+        .tint(.red)
+      }
+      .task {
+        await fetchAdress()
+        await coinModel.fetchCoins()
+      }
+      .refreshable {
+        await fetchAdress()
+        await coinModel.fetchCoins()
+      }
+      .listStyle(.insetGrouped)
+      .navigationTitle("Account")
+      .navigationBarItems(trailing: Button { dismiss() } label: { Text("Done").bold() })
+    }
+  }
   
   var profile: some View {
     
@@ -52,7 +74,7 @@ struct AccountView: View {
         .background(
           HexagonView()
             .offset(x: -50, y: -100)
-      )
+        )
         .background(
           BlobView()
             .offset(x: 200, y: 20)
@@ -63,7 +85,7 @@ struct AccountView: View {
       HStack {
         Image(systemName: "location")
           .imageScale(.large)
-        Text("Argentina")
+        Text(adress.country)
           .foregroundColor(.secondary)
       }
     }
@@ -123,6 +145,28 @@ struct AccountView: View {
     }
     .listRowSeparator(.hidden)
     .accentColor(.primary)
+  }
+  
+  var coins: some View {
+    Section(header: Text("Coins")) {
+      ForEach(coinModel.coins) { coin in
+        HStack {
+          AsyncImage(url: URL(string: coin.logo)) { image in
+            image.resizable()
+              .aspectRatio(contentMode: .fit)
+          } placeholder: {
+            ProgressView()
+          }
+          .frame(width: 32, height: 32)
+          VStack(alignment: .leading, spacing: 4) {
+            Text(coin.coin_name)
+            Text(coin.acronym)
+              .font(.caption)
+              .foregroundColor(.secondary)
+          }
+        }
+      }
+    }
   }
   
   var pinButton: some View {
