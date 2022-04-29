@@ -18,6 +18,7 @@ struct SectionRow: View {
           .mask(Circle())
           .padding(12)
           .background(Color(UIColor.systemBackground).opacity(0.3))
+          .mask(Circle())
           .overlay(CircularView(value: section.progress))
         VStack(alignment: .leading, spacing: 8) {
           Text(section.subtitle)
@@ -39,6 +40,7 @@ struct SectionRow: View {
 
 struct SectionRow_Previews: PreviewProvider {
     static var previews: some View {
-        SectionRow()
+      SectionRow()
+        
     }
 }
