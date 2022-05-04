@@ -13,7 +13,10 @@ struct HomeView: View {
   @State var hasScrolled: Bool = false
   @State var showStatusBar: Bool = true
   @State var selectedID = UUID()
+  @State var showCourse: Bool = false
+  @State var selectedIndex: Int = 0
   @EnvironmentObject var model: Model
+  @AppStorage("isLiteMode") var isLiteMode: Bool = true
   
     var body: some View {
       ZStack {
@@ -94,7 +97,7 @@ struct HomeView: View {
   
   var featured: some View {
     TabView {
-      ForEach(featuredCourses) { course in
+      ForEach(Array(featuredCourses.enumerated()), id: \.offset) { index, course in
         GeometryReader { proxy in
           let minX = proxy.frame(in: .global).minX
           
@@ -103,7 +106,7 @@ struct HomeView: View {
             .frame(maxWidth: .infinity)
             .padding(.vertical, 40)
             .rotation3DEffect(.degrees(minX / -10), axis: (x: 0, y: 1, z: 0))
-            .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
+            .shadow(color: Color("Shadow").opacity(isLiteMode ? 0 : 0.3), radius: 10, x: 0, y: 10)
             .blur(radius: abs(minX / 40))
             .overlay(
               Image(course.image)
@@ -113,6 +116,12 @@ struct HomeView: View {
                 .offset(x: 32, y: -80)
                 .offset(x: minX / 2)
           )
+            .onTapGesture {
+              showCourse = true
+              selectedIndex = index
+            }
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
         }
       }
     }
@@ -121,7 +130,11 @@ struct HomeView: View {
     .background(
       Image("Blob 1")
         .offset(x: 250, y: -100)
+        .accessibility(hidden: true)
     )
+    .sheet(isPresented: $showCourse) {
+      CourseView(namespace: namespace, course: featuredCourses[selectedIndex], show: $showCourse)
+    }
   }
   
   var cards: some View {
@@ -135,6 +148,8 @@ struct HomeView: View {
             selectedID = course.id
           }
       }
+        .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isButton)
     }
   }
   
