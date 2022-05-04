@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171EF9CA2822B90200A7392E /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EF9C92822B90200A7392E /* ExploreView.swift */; };
+		171EF9CC2822BA9200A7392E /* SmallCourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EF9CB2822BA9200A7392E /* SmallCourseItem.swift */; };
 		1726013428103F9100C5694B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726013328103F9100C5694B /* TabBar.swift */; };
 		17260136281044B500C5694B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17260135281044B500C5694B /* Tab.swift */; };
 		172751C72811F77B00BAB1F1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172751C62811F77B00BAB1F1 /* Course.swift */; };
@@ -15,6 +17,7 @@
 		173C3ECF2819C98E003E0583 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3ECE2819C98E003E0583 /* InputStyle.swift */; };
 		173C3ED12819D3FF003E0583 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3ED02819D3FF003E0583 /* ModalView.swift */; };
 		173C3ED32819D514003E0583 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C3ED22819D514003E0583 /* SignInView.swift */; };
+		1742D9CE2821720500AF4543 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1742D9CD2821720500AF4543 /* PlayView.swift */; };
 		1766C0B6280EF095009CE78E /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1766C0B5280EF095009CE78E /* AccountView.swift */; };
 		176BE8A62811BC3B0096238F /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BE8A52811BC3B0096238F /* PreferenceKeys.swift */; };
 		176BE8A82811C3610096238F /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BE8A72811C3610096238F /* AnimatableFontModifier.swift */; };
@@ -45,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		171EF9C92822B90200A7392E /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		171EF9CB2822BA9200A7392E /* SmallCourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCourseItem.swift; sourceTree = "<group>"; };
 		1726013328103F9100C5694B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		17260135281044B500C5694B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		172751C62811F77B00BAB1F1 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -53,6 +58,7 @@
 		173C3ECE2819C98E003E0583 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		173C3ED02819D3FF003E0583 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		173C3ED22819D514003E0583 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		1742D9CD2821720500AF4543 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		1766C0B5280EF095009CE78E /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		176BE8A52811BC3B0096238F /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		176BE8A72811C3610096238F /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 				1788C2B828197C5D00C0D1F7 /* SearchView.swift */,
 				17FBA276281ADD510002467C /* AvatarView.swift */,
 				17957A4D281B52F400A024D6 /* SectionView.swift */,
+				171EF9C92822B90200A7392E /* ExploreView.swift */,
 				17FBA275281AD28C0002467C /* Modals */,
 			);
 			path = Views;
@@ -128,6 +135,8 @@
 				179AFF5A28132D43004085FB /* CourseItem.swift */,
 				17FBA27C281B10800002467C /* CircularView.swift */,
 				17957A4B281B4F0500A024D6 /* SectionRow.swift */,
+				1742D9CD2821720500AF4543 /* PlayView.swift */,
+				171EF9CB2822BA9200A7392E /* SmallCourseItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 				17936986281190B40078A44C /* HomeView.swift in Sources */,
 				17957A4E281B52F400A024D6 /* SectionView.swift in Sources */,
 				17EE4CF1280F546000BEC449 /* BlobView.swift in Sources */,
+				1742D9CE2821720500AF4543 /* PlayView.swift in Sources */,
 				179AFF5D28133197004085FB /* CourseView.swift in Sources */,
 				1766C0B6280EF095009CE78E /* AccountView.swift in Sources */,
 				1788C2BB2819837900C0D1F7 /* Suggestion.swift in Sources */,
@@ -291,12 +301,14 @@
 				17260136281044B500C5694B /* Tab.swift in Sources */,
 				1793699028119B150078A44C /* NavigationBar.swift in Sources */,
 				173C3ECD28199FB5003E0583 /* AngularButtonStyle.swift in Sources */,
+				171EF9CA2822B90200A7392E /* ExploreView.swift in Sources */,
 				17CF66C228060E8800A322D3 /* ContentView.swift in Sources */,
 				173C3ED32819D514003E0583 /* SignInView.swift in Sources */,
 				17CF66C028060E8800A322D3 /* SwiftUI_App_for_iOS_15App.swift in Sources */,
 				17FBA27D281B10800002467C /* CircularView.swift in Sources */,
 				17957A4A281B4D6800A024D6 /* CourseSection.swift in Sources */,
 				17FBA27B281AEA290002467C /* Coin.swift in Sources */,
+				171EF9CC2822BA9200A7392E /* SmallCourseItem.swift in Sources */,
 				172751C72811F77B00BAB1F1 /* Course.swift in Sources */,
 				17EE4CF3280F5FA500BEC449 /* HexagonView.swift in Sources */,
 				17FBA279281AE8240002467C /* Adress.swift in Sources */,
